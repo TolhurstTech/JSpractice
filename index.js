@@ -1,5 +1,10 @@
-function buildHelloArray(){
-    console.log("This console.log is inside the function");
+function buildHelloArray(num){
+    let myArray = [];
+    for (let i =0; i < num; i++ ) {
+        myArray.push('hello');
+    }
+    return myArray;
 }
 
-buildHelloArray();
+let result = buildHelloArray(11);
+console.log(result);
